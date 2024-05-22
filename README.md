@@ -11,7 +11,9 @@ We extracted the CT scans of the patients from the EHR of a tertiary hospital. A
 Nifti files were segmented using  3D-slicer application under the supervision of expert radiologists. Next, CT images and labels were pre-processed. We used random Guassian noise, random intensity scaling, and random contrast adjustment for image augmentation. Each CT image has 3 labels (1. ground glass opacity (GGO), 2. Fibrosis, 3. Normal lung). Lung involvement was assessed by the following formula: 
 
 GGO (%)= number of GGO voxels/(number of GGO voxels + number of fibrosis voxels + number of normal lung voxels)
+
 Fibrosis (%)= number of fibrosis voxels/(number of GGO voxels + number of fibrosis voxels + number of normal lung voxels)
+
 Total ILD (%)= (number of GGO voxels + number of fibrosis voxels)/(number of GGO voxels + number of fibrosis voxels + number of normal lung voxels)
 
 
